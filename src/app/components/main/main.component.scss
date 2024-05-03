@@ -1,0 +1,159 @@
+/* main-view.page.scss */
+
+ion-avatar {
+}
+.post{
+  padding-bottom: 10px;
+}
+.pro-pic {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+  .feed-header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .feed-header .feed-details {
+    display: flex;
+    padding-bottom: 7px;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+  .name-location {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-left: 5px;
+    padding-top: 7px;
+  }
+  .name-location .name {
+    font-size: 14px;
+
+  }
+  .name-location .location {
+    font-size: 10px;
+    color: gray;
+    font-weight: 200;
+
+  }
+ 
+//   ion-label {
+//     margin-left: 10px;
+//   }
+  ion-icon .heart{
+    color: red;
+  }
+ion-item p {
+    padding-left: 10px;
+}
+  
+  h2 {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  p {
+    font-size: 12px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+  
+  ion-content {
+    --background: #f4f4f4; /* Set background color */
+  }
+  ion-item {
+    padding: 0;
+  }
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 5px;
+    padding-left: 3px;
+    padding-right: 3px;
+
+  }
+  .header > div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-right: 5px;
+  }
+  .intsagram-logo {
+    width: 115px;
+    color: red;
+  }
+
+  .feed-img {
+    width: 100%;
+    max-height: 530px;
+    object-fit: cover;
+  }
+  .more {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+  }
+
+
+  .bottom-icon ion-icon {
+
+  }
+ .feed-header .item {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-top: 5px;
+  }
+.likes-comment {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.likes-comment .tag{
+  font-weight: 300;
+  font-size: 11px;
+}
+.highlights {
+  font-size: 13px;
+  font-weight: 400;
+}
+.view-all{
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 4px;
+  font-size: 10px;
+  color: gray;
+}
+
+.add-comment {
+display: flex;
+gap: 3px;
+padding-left: 5px;
+padding-right: 5px;
+padding-top: 5px;
+align-items: center;
+}
+.add-comment img {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.add-comment p{
+  color: gray;
+  font-size: 9px;
+}
+  .stories {
+    display: flex;
+    padding-left: 8px;
+    background: white;
+    gap: 8px;
+    overflow: auto;
+  }

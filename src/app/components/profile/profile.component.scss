@@ -1,0 +1,64 @@
+.profile-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px;
+  }
+  
+  .profile-info ion-avatar {
+    width: 100px;
+    height: 100px;
+  }
+
+  .profile-info h3 {
+    margin-top: 10px;
+  }
+  
+  .profile-info p {
+    font-size: 14px;
+    color: #777;
+  }
+  
+  .profile-stats {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+  
+  .profile-stats .stat {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .profile-stats .stat .count {
+    font-size: 18px;
+  }
+  
+  .profile-stats .stat .label {
+    font-size: 14px;
+    color: #777;
+  }
+  
+  .edit-profile {
+    padding: 10px;
+  }
+  
+  ion-col {
+    padding: 5px;
+  }
+  
+  ion-col img {
+    width: 100%;
+  }
+
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+  .buttons {
+    display: flex;
+    gap: 2px;
+  }

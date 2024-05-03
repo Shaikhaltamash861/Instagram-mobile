@@ -1,0 +1,13 @@
+<ion-content>
+    <ion-searchbar class="search" [(ngModel)]="searchTerm" (ionChange)="search()">
+    </ion-searchbar>
+
+    <ion-list>
+        <ion-item *ngFor="let user of searchResults">
+            <ion-avatar slot="start">
+                <img [src]="user.profile_picture">
+            </ion-avatar>
+            <ion-label>{{ user.username }}</ion-label>
+        </ion-item>
+    </ion-list>
+</ion-content>

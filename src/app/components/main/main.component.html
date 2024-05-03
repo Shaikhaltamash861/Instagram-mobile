@@ -1,0 +1,85 @@
+<ion-content>
+<ion-item lines="none">
+
+    <img src='https://www.pngfind.com/pngs/b/125-1255980_ig-icon-png.png' class="intsagram-logo"/>
+ 
+     <ion-icon name="heart-outline" slot="end"></ion-icon>
+      <ion-icon name="chatbubble-outline" size="medium" slot="end"></ion-icon>
+
+</ion-item>
+  <!-- List of posts -->
+  <!-- <div class="stories">
+
+    <app-story></app-story>
+    <app-story></app-story>
+    <app-story></app-story>
+    <app-story></app-story>
+    <app-story></app-story>
+    <app-story></app-story>
+    <app-story></app-story>
+    <app-story></app-story>
+  </div> -->
+  <ion-list>
+    <div class="post" *ngFor="let post of posts">
+      <div class="feed-header">
+
+        <div class="feed-details">
+          <img class="pro-pic" [src]="post.avatar">
+        <div class="name-location">
+          <span class="name">{{post.username}}</span>
+          <span class="location">Mumbai Mahrastra</span>
+        </div>
+        <div class="more">
+
+          <ion-icon name="ellipsis-vertical-outline" slot="end"></ion-icon>
+        </div>
+      </div>
+      <div>
+        
+        <img class="feed-img" [src]=[post.image] style=" width: 100%;">
+     
+      </div>
+      
+        <div class="item">
+          <div>
+
+            <ion-icon class="heart" aria-hidden="true" name="heart-outline" slot="start" style="padding-right: 5px;"></ion-icon>
+            <ion-icon name="chatbubble-outline" style="padding-right: 5px;"></ion-icon>
+            <ion-icon name="send-outline" style="padding-right: 5px;"></ion-icon>
+          </div>
+          <ion-icon name="bookmark-outline"  slot="end"></ion-icon>
+        </div>
+        <div class="likes-comment">
+          <span class="tag">Liked by 
+          </span>
+          <span class="highlights">
+
+            {{post.username}} 
+          </span>
+          <span class="tag">
+            
+            and 
+          </span>
+          <span class="highlights">
+
+            23 others
+          </span>
+          <div>
+            <span class="highlights">
+
+              {{post.username}}
+            </span>
+            
+            <span class="tag">{{post.caption}}</span>
+          </div>
+        </div>
+        <div class="view-all">View all 6 comments</div>
+        <div class="add-comment">
+          <img [src]=[post.avatar]/>
+          <p>Add a comment</p>
+        </div>
+      
+    </div>
+  </div>
+  </ion-list>
+</ion-content>
